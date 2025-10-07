@@ -21,12 +21,12 @@ public class InternFormData {
 	@SequenceGenerator(name="carre1",sequenceName = "seq1",initialValue = 1,allocationSize = 1)
 	@GeneratedValue(generator = "seq1",strategy =GenerationType.SEQUENCE )
 	@Id
-	private Integer cid;
+	private Integer cId;
 	@Column(length = 20)
-	private String cname;
+	private String cName;
 	@Column(length = 20)
 	private String email;
-    private Long phoneno;
+    private Long phoneNo;
     private String resumePath;
     
     
