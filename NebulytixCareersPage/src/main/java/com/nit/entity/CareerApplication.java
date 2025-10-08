@@ -1,10 +1,18 @@
 package com.nit.entity;
 
-import jakarta.persistence.*;
 import java.time.Instant;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
 
 @Entity
 @Table(name = "career_applications")
+@Data
 public class CareerApplication {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +21,7 @@ public class CareerApplication {
     private String role;
     private String firstName;
     private String lastName;
+    @Column(unique = true)
     private String email;
     private String phone;
     private String qualification;
