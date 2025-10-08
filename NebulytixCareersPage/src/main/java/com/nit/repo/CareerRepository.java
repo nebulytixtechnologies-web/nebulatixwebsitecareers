@@ -1,9 +1,13 @@
 package com.nit.repo;
 
-import com.nit.entity.CareerApplication;
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.nit.entity.CareerApplication;
 
-
-public interface CareerRepository extends JpaRepository<CareerApplication, Long> {}
+public interface CareerRepository extends JpaRepository<CareerApplication, Long>
+{
+	Optional<CareerApplication> findByEmail(String email);
+}
 

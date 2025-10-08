@@ -5,7 +5,6 @@ package com.nit.controller;
 
 
 import com.nit.entity.CareerApplication;
-import com.nit.repo.CareerRepository;
 import com.nit.service.EmailService;
 import com.nit.service.ICareerApplicationService;
 

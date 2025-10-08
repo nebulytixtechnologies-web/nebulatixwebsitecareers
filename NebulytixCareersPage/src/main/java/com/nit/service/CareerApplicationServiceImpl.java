@@ -1,5 +1,7 @@
 package com.nit.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,9 +18,17 @@ public class CareerApplicationServiceImpl implements ICareerApplicationService
 	@Override
 	public CareerApplication insert(CareerApplication app) 
 	{
-		CareerApplication save = repo.save(app);
 		
-		return save;
+		 Optional<CareerApplication> existing = repo.findByEmail(app.getEmail());
+
+		    if (existing.isPresent()) 
+		    {
+		        throw new IllegalArgumentException("Email already exists");
+		    }
+          
+		    return repo.save(app);
+		
+	
 	}
 
 }
