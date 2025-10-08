@@ -70,6 +70,7 @@ public class CareerController {
             app.setRole(role);
             app.setFirstName(firstName);
             app.setLastName(lastName);
+            
             app.setEmail(email);
             app.setPhone(phone);
             app.setQualification(qualification);
