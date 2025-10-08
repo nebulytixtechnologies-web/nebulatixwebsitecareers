@@ -7,6 +7,7 @@ package com.nit.controller;
 import com.nit.entity.CareerApplication;
 import com.nit.repo.CareerRepository;
 import com.nit.service.EmailService;
+import com.nit.service.ICareerApplicationService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -23,8 +24,8 @@ import java.util.UUID;
 @RequestMapping("/api/careers")
 public class CareerController {
    
-    @Autowired
-    private CareerRepository careerRepository;
+   @Autowired 
+   private ICareerApplicationService service;
     @Autowired
     private EmailService emailService;
     
@@ -62,7 +63,7 @@ public class CareerController {
         app.setResumeFileName(fileName);
         app.setAppliedAt(Instant.now());
 
-        CareerApplication saved = careerRepository.save(app);
+       CareerApplication saved = service.insert(app);
         
         
      // Send confirmation email to applicant
