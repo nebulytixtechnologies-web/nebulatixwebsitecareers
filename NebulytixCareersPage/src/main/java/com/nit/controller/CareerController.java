@@ -1,6 +1,7 @@
 package com.nit.controller;
 
 import com.nit.entity.CareerApplication;
+import com.nit.repo.CareerRepository;
 import com.nit.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
