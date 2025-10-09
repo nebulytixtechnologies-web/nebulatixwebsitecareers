@@ -1,10 +1,10 @@
-package com.nit.repo;
+package com.neb.repo;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.nit.entity.CareerApplication;
+import com.neb.entity.CareerApplication;
 
 public interface CareerRepository extends JpaRepository<CareerApplication, Long>
 {

@@ -1,4 +1,4 @@
-package com.nit.entity;
+package com.neb.entity;
 
 import java.time.Instant;
 

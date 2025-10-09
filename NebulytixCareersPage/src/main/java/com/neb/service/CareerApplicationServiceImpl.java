@@ -1,10 +1,10 @@
-package com.nit.service;
+package com.neb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nit.entity.CareerApplication;
-import com.nit.repo.CareerRepository;
+import com.neb.entity.CareerApplication;
+import com.neb.repo.CareerRepository;
 
 @Service
 public class CareerApplicationServiceImpl implements ICareerApplicationService
