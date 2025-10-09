@@ -1,8 +1,9 @@
-package com.nit.controller;
+package com.neb.controller;
 
-import com.nit.entity.CareerApplication;
-import com.nit.repo.CareerRepository;
-import com.nit.service.EmailService;
+import com.neb.entity.CareerApplication;
+import com.neb.repo.CareerRepository;
+import com.neb.service.EmailService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

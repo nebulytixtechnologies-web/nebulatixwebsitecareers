@@ -1,6 +1,6 @@
-package com.nit.service;
+package com.neb.service;
 
-import com.nit.entity.CareerApplication;
+import com.neb.entity.CareerApplication;
 
 public interface ICareerApplicationService 
 {
