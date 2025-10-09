@@ -112,6 +112,6 @@ public class CareerController {
             response.put("status", "error");
             response.put("message", "Unexpected error: " + ex.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
-        }
+        }//here the end of program
     }
 }
